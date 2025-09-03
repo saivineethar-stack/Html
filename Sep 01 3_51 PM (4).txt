@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #022;
+            padding:10%;
+        }
+        .b-zero{
+            padding:10%;
+            height:600px;
+            width: 600px;
+            place-self: center;
+            background: linear-gradient(45deg ,lightgreen ,rgb(13, 2, 138));
+            animation: clock 4s infinite;
+            opacity: 0.5;
+            border-radius: 10%;
+            z-index: 0;
+        }
+        .b-one{
+            padding: 10%;
+            height:100%;
+            width: 100%;
+            background-color: white;
+            animation: anti-clock 4s infinite;
+            border-radius: 10%;
+            z-index: 1;
+        }
+                @keyframes clock {
+            0%{
+                transform: rotate(0deg);
+                border-radius: 10%;
+            }
+            50%{
+                transform: rotate(180deg);
+                border-radius: 50%;
+            }
+            100%{
+                transform: rotate(360deg);
+                border-radius: 10%;
+            }
+        }
+        @keyframes anti-clock {
+            0%{
+                transform: rotate(0deg);
+                border-radius:10% ;
+            }
+            50%{
+                transform: rotate(-360deg);
+                border-radius: 50%;
+            }
+            100%{
+                transform: rotate(-720deg);
+                border-radius: 10%;
+            }
+        }
+        @keyframes anti-card {
+            0%{
+                transform: rotate(0deg);
+                border-radius:10% ;
+            }
+            50%{
+                transform: rotate(180deg);
+                border-radius: 10%;
+            }
+            100%{
+                transform: rotate(360deg);
+                border-radius: 10%;
+            }
+        }
+        .card{
+            z-index: 3;
+            opacity: 1;
+            background: white;
+            border-radius: 10%;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            
+        }
+        image{
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="b-zero">
+        <div class="b-one"> 
+            <div class="card">
+                <h1>invitation titile</h1>
+                <p>para1</p>
+                <img src="None" alt="">
+
+                <h2>place</h2>
+                <p></p>
+                <h2>time</h2>
+
+
+            </div>        </div>
+    </div>
+</body>
+</html>
